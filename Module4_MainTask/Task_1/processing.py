@@ -5,6 +5,6 @@ def total_salary(filepath: str) -> tuple:
     salary_list = get_salary(get_raw_data(filepath))
 
     total = sum(salary_list)
-    average = sum(salary_list) // len(salary_list)
+    average = 0 if len(salary_list) == 0 else total // len(salary_list) #ZeroDivisionError
 
     return total, average 

@@ -1,0 +1,1 @@
+DATA_FILE = 'Module4_MainTask\Task_4\contacts.json'
